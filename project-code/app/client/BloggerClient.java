@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 
+import play.Logger;
 import play.Play;
 
 import com.google.gdata.client.Query;
@@ -30,6 +31,7 @@ public class BloggerClient {
 
 	private BloggerClient() {
 		String blogid = Play.application().configuration().getString("blogger.blogid");
+		Logger.info("Blog id is "+blogid);
 		// String profileid =
 		// Play.application().configuration().getString("blogger.profileid");
 		String name = Play.application().configuration().getString("blogger.name");
