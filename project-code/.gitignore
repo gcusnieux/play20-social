@@ -8,3 +8,4 @@ dist
 .settings
 .project
 .classpath
+.target
